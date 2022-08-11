@@ -35,45 +35,69 @@ html {
 .bg-box {
 	background-color: var(--clr-neutral-gblue);
 	padding: 20px;
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	min-height: 300px;
 	position: relative;
-    margin-top: 120px;
+	margin-top: 120px;
 }
 
 .bg-box h1 {
 	color: var(--clr-secondary);
-    font-size: 12px;
-    text-align: center;
-    word-spacing: 0.1rem;
-    letter-spacing: 0.05rem;
-    margin-bottom: 30px;
-
+	font-size: 12px;
+	text-align: center;
+	word-spacing: 0.1rem;
+	letter-spacing: 0.05rem;
+	margin-bottom: 30px;
 }
 
 .bg-box p {
 	font-size: 28px;
-    margin: 10px;
-    text-align: center;
-    min-height: 120px;
+	margin: 10px;
+	text-align: center;
+	min-height: 120px;
 }
 
 .btn {
 	position: absolute;
 	bottom: -20px;
-    right: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    background-color: var(--clr-secondary);
-    padding-top: 2px;
+	right: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	background-color: var(--clr-secondary);
+	padding-top: 2px;
+	transition: box-shadow 150ms ease-in-out;
+}
+
+.btn:hover {
+	box-shadow: 1px 1px 20px 1px var(--clr-secondary),
+		-1px -1px 20px -1px var(--clr-secondary);
 }
 
 .divider {
-    margin: 40px 0;
+	margin: 40px 0;
+}
+
+@media screen and (min-width: 576px) {
+	.container {
+		max-width: 1200px;
+	}
+	.bg-box {
+		margin-top: 250px;
+		width: 600px;
+		min-height: 200px;
+	}
+
+    .bg-box h1 {
+        margin-bottom: 70px;
+    }
+
+    .divider {
+        margin: 10px 0 75px 0;
+    }
 }
