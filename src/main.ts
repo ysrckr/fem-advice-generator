@@ -20,9 +20,9 @@ const displayNewAdvice = async () => {
 
 const checkScreenSize = () => {
 	if (window.innerWidth < 768) {
-		divider.src = './src/images/pattern-divider-mobile.svg'
+		divider.src = '/images/pattern-divider-mobile.svg'
 	} else {
-		divider.src = './src/images/pattern-divider-desktop.svg'
+		divider.src = '/images/pattern-divider-desktop.svg'
 		divider.style.width = '100%'
 	}
 }
@@ -33,7 +33,7 @@ addEventListener('resize', () => {
 	if (innerWidth < 576) {
 		return
 	}
-	divider.src = './src/images/pattern-divider-desktop.svg'
+	divider.src = '/images/pattern-divider-desktop.svg'
 	divider.style.width = '100%'
 })
 
