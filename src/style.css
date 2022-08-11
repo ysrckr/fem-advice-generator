@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+	--clr-primary: hsl(193, 38%, 86%);
+	--clr-secondary: hsl(150, 100%, 66%);
+	--clr-neutral-blue: hsl(217, 19%, 38%);
+	--clr-neutral-gblue: hsl(217, 19%, 24%);
+	--clr-neutral-dark: hsl(218, 23%, 16%);
+}
+
+html,
+body,
+p {
+	font-family: 'Manrope', sans-serif;
+	font-size: 28px;
+	font-weight: 800;
+	line-height: 1.5;
+	color: var(--clr-primary);
+}
+
+html {
+	background-color: var(--clr-neutral-dark);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 350px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.bg-box {
+	background-color: var(--clr-neutral-gblue);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	min-height: 300px;
+	position: relative;
+    margin-top: 120px;
+}
+
+.bg-box h1 {
+	color: var(--clr-secondary);
+    font-size: 12px;
+    text-align: center;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 30px;
+
+}
+
+.bg-box p {
+	font-size: 28px;
+    margin: 10px;
+    text-align: center;
+    min-height: 120px;
+}
+
+.btn {
+	position: absolute;
+	bottom: -20px;
+    right: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--clr-secondary);
+    padding-top: 2px;
+}
+
+.divider {
+    margin: 40px 0;
+}
